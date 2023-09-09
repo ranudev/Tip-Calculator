@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipcal.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="Header">
+            <p> Tip Calculator</p>
+        </div>
+        <main class="main">
+            <div>
+                <p>Bil Amount</p>
+                <input type="number" id="Bill" placeholder="Amount To Be Paid"> <span>&#8377;</span>
+
+                <p> How Was the service?</p>
+
+                <!-- <input type="alphanumeric"  id="tipper" placeholder="Select">  -->
+                <select id="percentage">
+                    <option value="0.25">25% -Top Notch</option>
+                    <option value="0.20">20% -Excellent</option>
+                    <option value="0.15">15% -Good</option>
+                    <option value="0.10">10% -Bad</option>
+                    <option value="0.5">5% -Worst</option>
+                </select>
+
+                <p> Total number of persons</p>
+                <input type="number" id="person" placeholder="Number of people sharing the bills">
+            </div>
+
+            <button onclick="Cal()" >Calculate </button>
+
+            <div id="amount"> 
+              
+
+            </div>
+    </div>
+    </main>
+    </div>
+    <script src="tipcal.js"></script>
+</body>
+
+</html>
